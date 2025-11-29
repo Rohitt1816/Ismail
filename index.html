@@ -32,7 +32,7 @@
             margin: 0 auto;
             color: #fff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-            padding: 15px;
+            padding: 20px;
         }
 
         h1 {
@@ -50,8 +50,6 @@
             margin: 1.5rem 0;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            max-height: 60vh;
-            overflow-y: auto;
         }
 
         p {
@@ -213,87 +211,105 @@
         @media (max-width: 1024px) {
             .container {
                 max-width: 600px;
-            }
-            
-            .photo {
-                width: 170px;
-                height: 170px;
-            }
-            
-            .photo:nth-child(1) {
-                top: 8%;
-                left: 3%;
-            }
-            
-            .photo:nth-child(2) {
-                top: 8%;
-                right: 3%;
-            }
-            
-            .photo:nth-child(3) {
-                bottom: 8%;
-                left: 3%;
-            }
-            
-            .photo:nth-child(4) {
-                bottom: 8%;
-                right: 3%;
+                width: 85%;
             }
         }
 
-        /* Mobile layout */
+        /* Mobile layout - SIGNIFICANTLY REDUCED CONTAINER SIZE */
         @media (max-width: 768px) {
             body {
-                padding: 15px;
+                padding: 10px;
+                align-items: flex-start;
+                padding-top: 30px;
             }
             
             .container {
-                padding: 10px;
                 width: 95%;
+                max-width: 400px;
+                padding: 10px;
             }
             
             .message {
-                padding: 1.2rem;
-                margin: 1rem 0;
-                max-height: 55vh;
+                padding: 0.8rem;
+                margin: 0.8rem 0;
+                border-radius: 12px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            p {
+                font-size: 0.9rem;
+                line-height: 1.4;
+                margin-bottom: 0.6rem;
+            }
+            
+            .signature {
+                font-size: 1rem;
+                margin-top: 1rem;
             }
             
             .photo {
-                width: 140px;
-                height: 140px;
+                width: 130px;
+                height: 130px;
             }
             
             .photo:nth-child(1) {
-                top: 5%;
+                top: 2%;
                 left: 2%;
             }
             
             .photo:nth-child(2) {
-                top: 5%;
+                top: 2%;
                 right: 2%;
             }
             
             .photo:nth-child(3) {
-                bottom: 5%;
+                bottom: 2%;
                 left: 2%;
             }
             
             .photo:nth-child(4) {
-                bottom: 5%;
+                bottom: 2%;
                 right: 2%;
             }
         }
 
-        /* Small mobile layout */
+        /* Small mobile layout - EVEN SMALLER */
         @media (max-width: 480px) {
+            body {
+                padding: 5px;
+                padding-top: 20px;
+            }
+            
             .container {
+                width: 98%;
+                max-width: 350px;
                 padding: 8px;
             }
             
             .message {
-                padding: 1rem;
-                margin: 0.8rem 0;
-                max-height: 50vh;
+                padding: 0.6rem;
+                margin: 0.6rem 0;
+                border-radius: 10px;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 0.4rem;
+            }
+            
+            p {
+                font-size: 0.85rem;
+                line-height: 1.3;
+                margin-bottom: 0.5rem;
+            }
+            
+            .signature {
+                font-size: 0.9rem;
+                margin-top: 0.8rem;
             }
             
             .photo {
@@ -302,61 +318,53 @@
             }
             
             .photo:nth-child(1) {
-                top: 3%;
-                left: 2%;
+                top: 1%;
+                left: 1%;
             }
             
             .photo:nth-child(2) {
-                top: 3%;
-                right: 2%;
+                top: 1%;
+                right: 1%;
             }
             
             .photo:nth-child(3) {
-                bottom: 3%;
-                left: 2%;
+                bottom: 1%;
+                left: 1%;
             }
             
             .photo:nth-child(4) {
-                bottom: 3%;
-                right: 2%;
-            }
-            
-            h1 {
-                font-size: 2rem;
-                margin-bottom: 0.8rem;
+                bottom: 1%;
+                right: 1%;
             }
         }
 
-        /* Extra small screens */
+        /* Extra small screens - SMALLEST CONTAINER */
         @media (max-width: 360px) {
-            .photo {
-                width: 90px;
-                height: 90px;
+            .container {
+                max-width: 320px;
+                padding: 5px;
             }
             
             .message {
-                padding: 0.8rem;
-                max-height: 45vh;
+                padding: 0.5rem;
+                margin: 0.5rem 0;
             }
             
-            .photo:nth-child(1) {
-                top: 2%;
-                left: 2%;
+            h1 {
+                font-size: 1.4rem;
             }
             
-            .photo:nth-child(2) {
-                top: 2%;
-                right: 2%;
+            p {
+                font-size: 0.8rem;
             }
             
-            .photo:nth-child(3) {
-                bottom: 2%;
-                left: 2%;
+            .signature {
+                font-size: 0.85rem;
             }
             
-            .photo:nth-child(4) {
-                bottom: 2%;
-                right: 2%;
+            .photo {
+                width: 90px;
+                height: 90px;
             }
         }
     </style>
